@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These two functions illustrate Lexical Scoping in R. The first function
+## calculated the mean of the vector and the second function can access it in 
+## order to avoid repetitive calculations.
 
-## Write a short comment describing this function
+## This function builds a set of functions and returns them as a list 
+## with names. It creates an R object that creates a vector and stores its mean.
 
 makeCacheMatrix <- function(x = matrix()) {
   inverse <- NULL
@@ -20,7 +22,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Retrieves the mean from the cached value that is stored in the 
+## makeCacheMatrix's enviroment. The funtion required an object of type 
+## makeCacheMatrix.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
